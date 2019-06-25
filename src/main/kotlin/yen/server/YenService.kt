@@ -8,7 +8,7 @@ import yen.Yen
 
 @CrossOrigin()
 @RestController("/yen")
-class YenSilver {
+class YenService {
 
   @PostMapping(produces = [MediaType.APPLICATION_JSON_VALUE])
   fun solveYen(@RequestBody arrayGraph: String?, @RequestParam from: String?, @RequestParam to: String?): List<Path> {
